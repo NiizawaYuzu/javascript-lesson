@@ -1,8 +1,8 @@
 //Q1 変数
-let nickname ='ごっしー';
+let nickname ='ごっしー'; //let:変数を宣言する var.const
 let age = 28;
 let greet = '私のニックネームは' + nickname + 'です。' + '年齢は' + age + 'です。';
-console.log(greet);
+console.log(greet); //変数の中身を出力する
 
 //Q2 配列
 let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
@@ -16,7 +16,7 @@ let user = {
   bloodType: 'A',
   favorite: 'card',
 };
-console.log(user.age);
+console.log(user.age);//オブジェクト名.key(プロパティ名)
 
 //Q4 配列×オブジェクト
 let playerList = [
@@ -43,17 +43,17 @@ let sum = 0;
 
 for (let i = 0; i < playerList.length; i++) {
   sum += playerList[i].age;
-  avarage = sum / 3;
+  average = sum / playerList.length;//3人の年齢の合計を配列の長さで割っている
 }
-console.log(avarage);
-
+console.log(average);
+  
 //Q6 関数
 function sayHello() {
   console.log('Hello');
 }
 sayHello();
 
-let sayWorld = function () {
+let sayWorld = function() {
   console.log('World');
 }
 sayWorld();
@@ -97,8 +97,7 @@ calc.divide(10,2);
 let x = 5;
 let y = 3;
 function remainder(x,y) {
-  let result = x % y;//15/2のあまり(%)が1
-  return result;
+  return x % y;//15/2のあまり(%)が1
 }
 
 console.log(x + 'を' + y + 'で割った余りは' + remainder(x,y) + 'です。');
@@ -115,8 +114,8 @@ console.log(x + 'を' + y + 'で割った余りは' + remainder(x,y) + 'です�
 
 //応用編 問題
 //Q1
-  let random = Math.floor(Math.random() * 10);
-  console.log(random);
+let random = Math.floor(Math.random() * 10);//floor:小数点を切り捨てる
+console.log(random);
 
 //Q2
 function time(){
