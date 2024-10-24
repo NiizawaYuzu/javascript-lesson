@@ -43,8 +43,8 @@ let sum = 0;
 
 for (let i = 0; i < playerList.length; i++) {
   sum += playerList[i].age;
-  average = sum / playerList.length;//3人の年齢の合計を配列の長さで割っている
 }
+average = sum / playerList.length;//3人の年齢の合計を配列の長さで割っている
 console.log(average);
   
 //Q6 関数
